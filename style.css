@@ -357,3 +357,47 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 1440px;
+  height: 1024px;
+  display: flex;
+  background-color: magenta;
+}
+
+.image {
+  width: 535px;
+  background-image: url("./img/sebastien-goldberg-vgGjc_jHyfU-unsplash.jpg");
+  background-color: skyblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content > div {
+  flex: 1;
+}
+
+.description {
+  background-color: red;
+}
+
+.form-main {
+  background-color: green;
+}
+
+.form-bottom {
+  background-color: blue;
+}
