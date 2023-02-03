@@ -449,7 +449,7 @@ body {
   bottom: 0;
   left: 0;
   margin: 45px;
-  width: min(64ch);
+  width: max(75%, 32ch);
 }
 
 .form-main {
