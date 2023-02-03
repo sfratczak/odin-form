@@ -433,6 +433,7 @@ body {
 
 .content > div {
   flex: 1;
+  padding-left: 45px;
 }
 
 .content h2 {
@@ -444,7 +445,6 @@ body {
 }
 
 .description > h2 {
-  display:block;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -455,4 +455,39 @@ body {
 .form-main {
   background-color: #fff;
   box-shadow: 0px 3px 8px #00000024;
+  color: rgb(31, 41, 56);
+}
+
+.form-main > h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.form-main > form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 72px;
+  row-gap: 32px;
+  margin-bottom: 32px;
+}
+
+.form-input {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input > label {
+  padding-bottom: 0.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.form-input > input {
+  width: 262px;
+  height: 32px;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 5px;
+  padding-left: 1ch;
 }
