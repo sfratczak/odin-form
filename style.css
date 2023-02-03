@@ -350,12 +350,12 @@
 
   /*============================END OF NORMALIZE.CSS============================*/
 
-  @font-face {
-    font-family: 'norsebold';
-    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
-         url('./fonts/norse-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'norsebold';
+  src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+       url('./fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -366,7 +366,7 @@ body {
   background-color: rgb(249,250,251);
 }
 
-.main {
+.page-wrapper {
   width: 1440px;
   height: 1024px;
   display: flex;
@@ -431,7 +431,7 @@ body {
   background-color: rgb(249,250,251);
 }
 
-.content > div {
+.content > section {
   flex: 1;
   padding-left: 45px;
 }
