@@ -57,6 +57,7 @@
           <div class="form-input">
             <label for="name">First Name</label
             ><input type="text" id="name" name="name" autocomplete="name" />
+            <div class="spacer"></div>
           </div>
           <div class="form-input">
             <label for="last-name">Last Name</label
@@ -66,10 +67,12 @@
               name="last-name"
               autocomplete="family-name"
             />
+            <div class="spacer"></div>
           </div>
           <div class="form-input">
             <label for="email">Email</label
             ><input type="email" id="email" name="email" autocomplete="email" />
+            <div class="spacer"></div>
           </div>
           <div class="form-input">
             <label for="phone">Phone Number</label
@@ -79,6 +82,7 @@
               name="phone"
               autocomplete="tel, tel-national, tel-local"
             />
+            <div class="spacer"></div>
           </div>
           <div class="form-input">
             <label for="password">Password</label
@@ -88,7 +92,7 @@
               name="password"
               autocomplete="new-password"
             />
-            <p id="password-error"></p>
+            <div id="password-error" class="spacer"></div>
           </div>
           <div class="form-input">
             <label for="conf-password">Confirm Password</label
@@ -99,6 +103,7 @@
               autocomplete="new-password"
               oninput="verifyPassword()"
             />
+            <div class="spacer"></div>
           </div>
           <input type="submit" id="submit" hidden />
         </form>
