@@ -368,21 +368,22 @@ template {
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(249, 250, 251);
+
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
-.page-wrapper {
+/* .page-wrapper {
   width: 1440px;
   height: 1024px;
   display: flex;
 
   font-family: "Helvetica", "Arial", sans-serif;
-}
+} */
 
 .image-sidebar {
-  width: 535px;
+  height: 100%;
+  width: max(35%, 535px);
   background-image: url("./img/sebastien-goldberg-vgGjc_jHyfU-unsplash.jpg");
   background-color: var(--main-color);
   background-size: cover;
@@ -398,7 +399,7 @@ body {
 
 .sidebar-odin-logo {
   position: absolute;
-  top: 200px;
+  top: 30%;
   height: 150px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -439,7 +440,6 @@ body {
 }
 
 .content > section {
-  flex: 1;
   padding-left: 45px;
 }
 
@@ -449,6 +449,7 @@ body {
 
 .description {
   position: relative;
+  flex: 1;
 }
 
 .description > h2 {
@@ -456,10 +457,15 @@ body {
   bottom: 0;
   left: 0;
   margin: 45px;
-  width: max(75%, 32ch);
+  width: clamp(32ch, 75%, 64ch);
+}
+
+form {
+  max-width: 650px;
 }
 
 .form-main {
+  flex: 0 1 auto;
   background-color: #fff;
   box-shadow: 0px 3px 8px var(--color-shadow);
   color: rgb(31, 41, 56);
@@ -519,6 +525,10 @@ body {
   padding: 0;
   margin: 0;
   color: red;
+}
+
+.form-bottom {
+  flex: 1;
 }
 
 .form-bottom > label {
