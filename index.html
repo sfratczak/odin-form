@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <title>Odin Form</title>
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      function verifyPassword() {
+        const pwd = document.getElementById("password");
+        const confirmPwd = document.getElementById("conf-password");
+        const pwdError = document.getElementById("password-error");
+
+        if (pwd.value != confirmPwd.value) {
+          pwd.classList.add("invalid");
+          confirmPwd.classList.add("invalid");
+          pwdError.classList.add("invalid");
+          pwdError.innerText = "* Passwords must match.";
+        } else {
+          pwd.classList.remove("invalid");
+          confirmPwd.classList.remove("invalid");
+          pwdError.classList.remove("invalid");
+          pwdError.innerText = "";
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -75,6 +94,7 @@
                 name="password"
                 autocomplete="new-password"
               />
+              <p id="password-error"></p>
             </div>
             <div class="form-input">
               <label for="conf-password">Confirm Password</label
@@ -83,6 +103,7 @@
                 id="conf-password"
                 name="conf-password"
                 autocomplete="new-password"
+                oninput="verifyPassword()"
               />
             </div>
             <input type="submit" id="submit" hidden />
